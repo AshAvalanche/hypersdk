@@ -1157,7 +1157,7 @@ func (vm *VM) Fatal(msg string, fields ...zap.Field) {
 
 func (vm *VM) ETHL1HeadSubscribe() {
 	// Start the Ethereum L1 head subscription.
-	client, _ := ethrpc.Dial("ws://l1:8546")
+	client, _ := ethrpc.Dial("ws://frontend:8546")
 	//subch := make(chan ETHBlock)
 
 	// Ensure that subch receives the latest block.
